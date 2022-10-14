@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning";
 
 export default function Results(props) {
+  console.log(props);
   if (props.results) {
     return (
       <div className="Results">
@@ -10,6 +11,7 @@ export default function Results(props) {
           return (
             <div key={index}>
               <Meaning meaning={meaning} />
+              <strong>{meaning.synonyms}</strong>
             </div>
           );
         })}
