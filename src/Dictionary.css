@@ -1,3 +1,55 @@
+body {
+  background: repeating-linear-gradient(
+      150deg,
+      rgba(255, 0, 0, 0.2) 40px,
+      rgba(255, 153, 0, 0.2) 80px,
+      rgba(255, 255, 0, 0.4) 120px,
+      rgba(0, 255, 0, 0.2) 160px,
+      rgba(0, 0, 255, 0.2) 200px,
+      rgba(75, 0, 130, 0.3) 240px,
+      rgba(238, 130, 238, 0.3) 280px,
+      rgba(255, 0, 0, 0.2) 300px
+    ),
+    repeating-linear-gradient(
+      -200deg,
+      rgba(255, 0, 0, 0.3) 30px,
+      rgba(255, 153, 0, 0.3) 60px,
+      rgba(255, 255, 0, 0.4) 90px,
+      rgba(0, 0, 255, 0.3) 150px,
+      rgba(75, 0, 130, 0.3) 180px,
+      rgba(238, 130, 238, 0.4) 210px,
+      rgba(255, 0, 0, 0.3) 230px
+    );
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .Dictionary {
-  text-align: center;
+  text-align: start;
+  text-align: justify;
+}
+
+.Dictionary section {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  margin: 20px 70px;
+}
+
+.Dictionary section:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.Phonetic audio {
+  width: 300px;
+  height: 40px;
+  opacity: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 18px;
+}
+
+.Phonetic audio:hover {
+  opacity: 100%;
 }
