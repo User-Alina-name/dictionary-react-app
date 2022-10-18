@@ -30,26 +30,46 @@ body {
   text-align: justify;
 }
 
+.Dictionary input {
+  border-radius: 20px;
+  width: 300px;
+  height: 40px;
+  padding: 10;
+  background: scroll;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.Dictionary input:hover {
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.8);
+}
+
+.Dictionary h2 {
+  font-size: 40px;
+}
+
+.Dictionary h3 {
+  font-size: 28px;
+}
+
 .Dictionary section {
   background: rgba(255, 255, 255, 0.6);
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 20px 70px;
+  transition: ease-in 300ms;
 }
 
 .Dictionary section:hover {
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
 }
 
 .Phonetic audio {
   width: 300px;
   height: 40px;
-  opacity: 70%;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 18px;
+  border-radius: 20px;
 }
 
 .Phonetic audio:hover {
-  opacity: 100%;
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.8);
 }
