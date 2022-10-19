@@ -20,7 +20,6 @@ export default function Results(props) {
           return (
             <section key={index}>
               <Meaning meaning={meaning} />
-              <strong>{meaning.synonyms}</strong>
             </section>
           );
         })}

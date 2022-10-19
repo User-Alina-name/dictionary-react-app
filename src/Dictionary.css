@@ -30,11 +30,24 @@ body {
   text-align: justify;
 }
 
+.Dictionary h1 {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 1.3px white;
+}
+
+.Dictionary h1:hover {
+  color: white;
+}
+
 .Dictionary input {
   border-radius: 20px;
   width: 300px;
   height: 40px;
-  padding: 10;
+  padding: 10px;
   background: scroll;
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
@@ -63,13 +76,35 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 
+.Meaning .definition {
+  line-height: 1.4;
+}
+
+.Meaning .example {
+  font-style: italic;
+  line-height: 1.2;
+  margin: 10px 0;
+  font-weight: 200;
+}
+
 .Phonetic audio {
   width: 300px;
   height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 20px;
+  margin: 10px 0;
 }
 
 .Phonetic audio:hover {
   box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.8);
+}
+
+.Synonyms {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.Synonyms li {
+  display: inline-flex;
+  padding-right: 10px;
 }
