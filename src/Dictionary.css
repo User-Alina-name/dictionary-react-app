@@ -28,19 +28,17 @@ body {
 .Dictionary {
   text-align: start;
   text-align: justify;
+  margin: 30px;
 }
 
 .Dictionary h1 {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
   text-align: center;
   margin: 20px;
+  font-size: 56px;
   font-weight: 800;
   letter-spacing: 1px;
-  -webkit-text-stroke: 1.3px white;
-}
-
-.Dictionary h1:hover {
-  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 .Dictionary input {
@@ -57,7 +55,7 @@ body {
 }
 
 .Dictionary h2 {
-  font-size: 40px;
+  font-size: 46px;
 }
 
 .Dictionary h3 {
@@ -66,9 +64,9 @@ body {
 
 .Dictionary section {
   background: rgba(255, 255, 255, 0.6);
-  padding: 30px;
+  padding: 20px;
+  margin-top: 10px;
   border-radius: 4px;
-  margin: 20px 70px;
   transition: ease-in 300ms;
 }
 
@@ -107,4 +105,9 @@ body {
 .Synonyms li {
   display: inline-flex;
   padding-right: 10px;
+}
+
+.Photos img {
+  border-radius: 4px !important;
+  margin: 10px auto;
 }
