@@ -26,14 +26,12 @@ body {
 }
 
 .Dictionary {
-  text-align: start;
-  text-align: justify;
+  text-align: center;
   margin: 30px;
 }
 
 .Dictionary h1 {
   color: white;
-  text-align: center;
   margin: 20px;
   font-size: 56px;
   font-weight: 800;
@@ -42,6 +40,8 @@ body {
 }
 
 .Dictionary input {
+  display: block;
+  margin: 0 auto;
   border-radius: 20px;
   width: 300px;
   height: 40px;
@@ -74,6 +74,12 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 
+.Dictionary label {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
 .Meaning .definition {
   line-height: 1.4;
 }
@@ -81,7 +87,7 @@ body {
 .Meaning .example {
   font-style: italic;
   line-height: 1.2;
-  margin: 10px 0;
+  margin: 5px 0;
   font-weight: 200;
 }
 
@@ -90,7 +96,7 @@ body {
   height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .Phonetic audio:hover {

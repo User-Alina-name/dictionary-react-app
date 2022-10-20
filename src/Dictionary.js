@@ -8,27 +8,32 @@ export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
-  let [photos, setPhotos] = useState(null);
+  let [photos, setPhotos] = useState([]);
 
-  function handleResponse(response) {
-    setResults(response.data[0]);
-  }
-
-  function handlePexel(response) {
+  function handlePhotos(response) {
     setPhotos(response.data.photos);
   }
 
-  function search() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-
-    axios.get(apiUrl).then(handleResponse);
+  function handleResponse(response) {
+    setResults(response.data[0]);
 
     let pexelsApiKey =
       "563492ad6f91700001000001e38d77db2ac64ad8a788da20115919ba";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=8`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
 
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexel);
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePhotos);
+  }
+
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  function search() {
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleSubmit(event) {
@@ -40,11 +45,6 @@ export default function Dictionary(props) {
     setKeyword(event.target.value);
   }
 
-  function load() {
-    setLoaded(true);
-    search();
-  }
-
   if (loaded) {
     return (
       <div className="Dictionary">
@@ -52,11 +52,13 @@ export default function Dictionary(props) {
         <div className="row">
           <div className="col-8">
             <section>
-              <h4>What word do you want to look up?</h4>
               <form onSubmit={handleSubmit}>
+                <label>What word do you want to look up?</label>
                 <input
                   type="search"
+                  placeholder="Search..."
                   autoFocus={true}
+                  className="form-control"
                   onChange={handleKeywordChange}
                 />
               </form>
