@@ -8,7 +8,7 @@
   }
 
   .Dictionary section {
-    padding: 10px !important;
+    padding: 10px 15px !important;
     font-size: 14px !important;
     line-height: 1 !important;
   }
@@ -26,7 +26,7 @@
 
   section.Photos {
     padding: 0 !important;
-    width: 94% !important;
+    width: 95% !important;
   }
 
   .Photos img {
@@ -49,8 +49,9 @@
   }
 
   .Dictionary footer {
-    margin-top: 5px !important;
-    font-size: 10px !important;
+    margin-top: 10px !important;
+    letter-spacing: -0.4px;
+    font-size: 9px !important;
   }
 }
 
@@ -112,8 +113,8 @@ body {
   flex: content !important;
   margin: 5px auto;
   border-radius: 20px;
-  width: 340px;
-  height: 40px;
+  width: 320px;
+  height: 35px;
   padding: 10px;
   background: scroll;
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -134,7 +135,7 @@ body {
 
 .Dictionary section {
   background: rgba(255, 255, 255, 0.6);
-  padding: 20px;
+  padding: 20px 30px;
   margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
@@ -164,8 +165,8 @@ body {
 }
 
 .Phonetic audio {
-  width: 340px;
-  height: 40px;
+  width: 320px;
+  height: 35px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   margin-top: 5px;
@@ -199,12 +200,17 @@ section.Photos {
 }
 
 .Dictionary footer {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 12px;
 }
 
 .Dictionary a {
   color: white;
   font-weight: 600;
+  text-decoration: none;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.Dictionary a:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
