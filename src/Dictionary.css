@@ -4,11 +4,11 @@
   }
 
   .Dictionary {
-    margin-left: 25px !important;
+    margin: 0 15px !important;
   }
 
   .Dictionary section {
-    padding: 10px 15px !important;
+    padding: 10px !important;
     font-size: 14px !important;
     line-height: 1 !important;
   }
@@ -26,7 +26,6 @@
 
   section.Photos {
     padding: 0 !important;
-    width: 95% !important;
   }
 
   .Photos img {
@@ -49,7 +48,7 @@
   }
 
   .Dictionary footer {
-    margin-top: 10px !important;
+    margin: 10px !important;
     letter-spacing: -0.4px;
     font-size: 9px !important;
   }
@@ -139,17 +138,18 @@ body {
   margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-  transition: ease-in 300ms;
+  transition: ease-in 200ms;
 }
 
 .Dictionary section:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgb(255, 255, 255);
 }
 
 .Dictionary .col-8,
 .col-4 {
   height: 670px;
-  overflow: auto;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
 
 .Meaning .definition {
@@ -167,13 +167,7 @@ body {
 .Phonetic audio {
   width: 320px;
   height: 35px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
   margin-top: 5px;
-}
-
-.Phonetic audio:hover {
-  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.8);
 }
 
 .Synonyms {
@@ -191,6 +185,7 @@ body {
 }
 
 section.Photos {
+  display: block;
   padding: 0;
   width: 100%;
 }
@@ -199,8 +194,12 @@ section.Photos {
   margin: 10px auto;
 }
 
+.Photos img:hover {
+  opacity: 80%;
+}
+
 .Dictionary footer {
-  margin-top: 20px;
+  margin: 10px;
   font-size: 12px;
 }
 
