@@ -55,6 +55,7 @@ export default function Dictionary(props) {
               <form onSubmit={handleSubmit}>
                 <input
                   type="search"
+                  title="Type for search any words"
                   placeholder="Search..."
                   autoFocus={true}
                   className="form-control"
@@ -68,7 +69,36 @@ export default function Dictionary(props) {
             <Photos photos={photos} />
           </div>
         </div>
-        <footer className="footer">Coded by Alina Pysmenna</footer>
+        <footer className="footer">
+          Coded by
+          <a
+            href="mailto:pismenna.alina18@gmail.com"
+            title="Link email address by front-end developer Alina Pysmenna"
+          >
+            {" "}
+            Alina Pysmenna,{" "}
+          </a>
+          open source code on
+          <a
+            href="https://github.com/User-Alina-name/dictionary-react-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Git-hub link Dictionary site with open source by front-end developer Alina Pysmenna"
+          >
+            {" "}
+            Git-Hub{" "}
+          </a>
+          and hosted on{" "}
+          <a
+            href="https://app.netlify.com/sites/dictionary-react-by-alina-pysmenna/overview"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Netlify link Dictionary by front-end developer Alina Pysmenna"
+          >
+            {" "}
+            Netlify.
+          </a>
+        </footer>
       </div>
     );
   } else {

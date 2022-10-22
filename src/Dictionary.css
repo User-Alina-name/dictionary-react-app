@@ -1,23 +1,22 @@
 @media (max-width: 600px) {
   .Dictionary h1 {
-    font-size: 36px !important;
-    margin: 5px !important;
+    font-size: 34px !important;
   }
 
   .Dictionary {
-    margin: 15px !important;
+    margin-left: 25px !important;
   }
 
   .Dictionary section {
     padding: 10px !important;
-    margin-left: -5px !important;
     font-size: 14px !important;
     line-height: 1 !important;
   }
 
   .Dictionary .col-4,
   .col-8 {
-    padding: 0 10px !important;
+    margin: 0 !important;
+    padding: 5px !important;
   }
 
   .Dictionary input {
@@ -27,6 +26,7 @@
 
   section.Photos {
     padding: 0 !important;
+    width: 94% !important;
   }
 
   .Photos img {
@@ -36,7 +36,6 @@
   .Phonetic audio {
     width: 100% !important;
     height: 30px !important;
-    margin: 5px 0;
   }
 
   .Dictionary h2 {
@@ -95,7 +94,7 @@ body {
 
 .Dictionary {
   text-align: center;
-  margin-left: 25px !important;
+  margin: 0 20px;
 }
 
 .Dictionary h1 {
@@ -152,11 +151,6 @@ body {
   overflow: auto;
 }
 
-.Dictionary label {
-  font-weight: 400;
-  font-size: 20px;
-}
-
 .Meaning .definition {
   line-height: 1.4;
   text-align: justify;
@@ -174,7 +168,7 @@ body {
   height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  margin: 5px 0;
+  margin-top: 5px;
 }
 
 .Phonetic audio:hover {
@@ -197,14 +191,20 @@ body {
 
 section.Photos {
   padding: 0;
-  width: 100% !important;
+  width: 100%;
 }
 
 .Photos img {
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 .Dictionary footer {
   margin-top: 10px;
   font-size: 12px;
+}
+
+.Dictionary a {
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
