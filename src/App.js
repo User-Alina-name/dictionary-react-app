@@ -1,4 +1,3 @@
-import "./App.css";
 import Dictionary from "./Dictionary.js";
 
 function App() {
@@ -7,7 +6,6 @@ function App() {
       <main>
         <Dictionary defaultKeyword="hello" />
       </main>
-      <footer className="App-footer">Coded by Alina Pysmenna</footer>
     </div>
   );
 }

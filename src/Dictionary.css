@@ -10,21 +10,19 @@
 
   .Dictionary section {
     padding: 10px !important;
-    margin-top: 5px !important;
+    margin-left: -5px !important;
+    font-size: 14px !important;
     line-height: 1 !important;
   }
 
-  .Dictionary label {
-    font-weight: 400;
-    letter-spacing: -0.4px;
-    font-size: 14px !important;
-    margin-bottom: 5px;
+  .Dictionary .col-4,
+  .col-8 {
+    padding: 0 10px !important;
   }
 
   .Dictionary input {
-    width: 210px !important;
+    width: 100% !important;
     height: 30px !important;
-    padding: 10px;
   }
 
   section.Photos {
@@ -32,17 +30,39 @@
   }
 
   .Photos img {
-    margin: 10px auto !important;
+    margin: 5px auto !important;
   }
 
   .Phonetic audio {
-    width: 210px !important;
+    width: 100% !important;
     height: 30px !important;
     margin: 5px 0;
   }
 
   .Dictionary h2 {
-    font-size: 32px !important;
+    font-size: 24px !important;
+    margin: 0 !important;
+  }
+
+  .Dictionary h3 {
+    font-size: 18px !important;
+    margin: 0 !important;
+  }
+
+  .Dictionary footer {
+    margin-top: 5px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .Dictionary section {
+    font-size: 12px !important;
+  }
+
+  .Dictionary .col-4,
+  .col-8 {
+    padding: 0 5px !important;
   }
 }
 
@@ -50,19 +70,19 @@ body {
   background: repeating-linear-gradient(
       150deg,
       rgba(255, 0, 0, 0.2) 40px,
-      rgba(255, 153, 0, 0.2) 80px,
+      rgba(255, 153, 0, 0.1) 80px,
       rgba(255, 255, 0, 0.2) 120px,
       rgba(0, 255, 0, 0.2) 160px,
-      rgba(0, 0, 255, 0.2) 200px,
+      rgba(0, 0, 255, 0.1) 200px,
       rgba(75, 0, 130, 0.2) 240px,
-      rgba(238, 130, 238, 0.3) 280px,
+      rgba(238, 130, 238, 0.2) 280px,
       rgba(255, 0, 0, 0.2) 300px
     ),
     repeating-linear-gradient(
       -200deg,
       rgba(255, 0, 0, 0.3) 30px,
       rgba(255, 153, 0, 0.2) 60px,
-      rgba(255, 255, 0, 0.2) 90px,
+      rgba(255, 255, 0, 0.1) 90px,
       rgba(0, 0, 255, 0.2) 150px,
       rgba(75, 0, 130, 0.3) 180px,
       rgba(238, 130, 238, 0.3) 210px,
@@ -75,12 +95,12 @@ body {
 
 .Dictionary {
   text-align: center;
-  margin: 30px;
+  margin-left: 25px !important;
 }
 
 .Dictionary h1 {
   color: rgb(246, 244, 251);
-  margin: 20px;
+  margin: 10px !important;
   font-size: 56px;
   font-weight: 800;
   letter-spacing: 0.1px;
@@ -90,9 +110,10 @@ body {
 
 .Dictionary input {
   display: block;
-  margin: 0 auto;
+  flex: content !important;
+  margin: 5px auto;
   border-radius: 20px;
-  width: 300px;
+  width: 340px;
   height: 40px;
   padding: 10px;
   background: scroll;
@@ -115,7 +136,7 @@ body {
 .Dictionary section {
   background: rgba(255, 255, 255, 0.6);
   padding: 20px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
   transition: ease-in 300ms;
@@ -127,13 +148,13 @@ body {
 
 .Dictionary .col-8,
 .col-4 {
-  padding: 5px;
+  height: 670px;
+  overflow: auto;
 }
 
 .Dictionary label {
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 5px;
 }
 
 .Meaning .definition {
@@ -144,12 +165,12 @@ body {
 .Meaning .example {
   font-style: italic;
   line-height: 1.2;
-  margin: 5px 0;
-  font-weight: 200;
+  margin-top: 5px;
+  font-weight: 300;
 }
 
 .Phonetic audio {
-  width: 300px;
+  width: 340px;
   height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 20px;
@@ -162,7 +183,8 @@ body {
 
 .Synonyms {
   margin: 0 0 15px;
-  line-height: 1.4;
+  line-height: 1.2;
+  font-weight: 600;
   padding: 0;
   text-align: justify;
   text-transform: capitalize;
@@ -175,8 +197,14 @@ body {
 
 section.Photos {
   padding: 0;
+  width: 100% !important;
 }
 
 .Photos img {
   margin: 15px auto;
+}
+
+.Dictionary footer {
+  margin-top: 10px;
+  font-size: 12px;
 }
